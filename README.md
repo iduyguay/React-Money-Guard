@@ -1,8 +1,22 @@
-# React + Vite
+# Money Guard - React Financial Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Money Guard is a financial management web application built with React, Redux Toolkit, and Vite.
 
-Currently, two official plugins are available:
+## Architecture & Responsibilities
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **`dev-Duygu`**: Authentication (Register, Login, Token Refresh), Private & Public Routes, Navigation, Header, Balance & Currency components.
+- **`dev-Kayra`**: Transactions Management (Add, Edit, Delete), Financial Statistics & Category Charts, Transaction Modals.
+
+## Features & Modules
+
+### Transactions & Statistics (`dev-Kayra`)
+- **Add & Edit Modals**: Formik / React Hook Form validation with Yup schemas for transaction management.
+- **Category Doughnut Chart**: Visual summary breakdown powered by `Chart.js` and `react-chartjs-2`.
+- **Transaction History**: Real-time sorted table view with formatted currency and dates.
+
+## Tech Stack
+- **Frontend**: React 18, Vite, React Router v6
+- **State Management**: Redux Toolkit, Redux Persist
+- **Styling**: CSS Modules, Modern Normalize
+- **Form & Validation**: React Hook Form, Yup
+- **Charts & UI**: Chart.js, React ChartJS 2, React Datepicker, React Icons
